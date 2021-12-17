@@ -11,7 +11,7 @@
 a{
     text-decoration: none;
 }
-body{
+.index_body{
     
     background: rgb(20, 20, 20);
 
@@ -26,6 +26,8 @@ img{
     width: 1200px;
     margin: 0 auto;
     justify-content: center;
+    background: rgb(25, 25, 25);
+    padding: 1em;
     
     
 
@@ -38,6 +40,7 @@ img{
         padding-left: 1em;
         padding-right: 1em;
         margin: 0 auto;
+        margin-bottom: 5em;
         justify-content: center;
         
         .logo{
@@ -96,7 +99,6 @@ img{
     .main{
         display: block;
         justify-content: left;
-        padding-top: 5em;
 
         .main_content{
             display: flex;
@@ -106,7 +108,7 @@ img{
                 .main_left_menu{
                     list-style-type: none;
                     li{
-                        padding-bottom: 0.5em;
+                        padding-bottom: 0.4em;
                     }
 
                 }
@@ -126,17 +128,22 @@ img{
 /* CHILD */
 
 .section_name{
-    font-size: 2em;
+    font-size: 3em;
+    text-align: left;
     color: rgb(145, 145, 145);
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }
 .child{
+    background: transparent;
     text-align: center;
     .child_text{
         padding-left: 2em;
         text-align: left;
         font-size: 1em;
         line-height: 1.5;
+    }
+    .section_name{
+        padding-left: 0.6em;
     }
 }
 

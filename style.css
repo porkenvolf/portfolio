@@ -12,7 +12,7 @@ a {
   text-decoration: none;
 }
 
-body {
+.index_body {
   background: #141414;
 }
 
@@ -28,6 +28,8 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background: #191919;
+  padding: 1em;
 }
 
 .container .intro {
@@ -41,6 +43,7 @@ img {
   padding-left: 1em;
   padding-right: 1em;
   margin: 0 auto;
+  margin-bottom: 5em;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -95,7 +98,6 @@ img {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
-  padding-top: 5em;
 }
 
 .container .main .main_content {
@@ -114,7 +116,7 @@ img {
 }
 
 .container .main .main_content .main_left .main_left_menu li {
-  padding-bottom: 0.5em;
+  padding-bottom: 0.4em;
 }
 
 .container .main .main_content .main_right {
@@ -123,12 +125,14 @@ img {
 
 /* CHILD */
 .section_name {
-  font-size: 2em;
+  font-size: 3em;
+  text-align: left;
   color: #919191;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 
 .child {
+  background: transparent;
   text-align: center;
 }
 
@@ -137,6 +141,10 @@ img {
   text-align: left;
   font-size: 1em;
   line-height: 1.5;
+}
+
+.child .section_name {
+  padding-left: 0.6em;
 }
 
 .c1:hover {
