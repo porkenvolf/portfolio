@@ -28,6 +28,31 @@ img{
     justify-content: center;
     background: rgb(20, 20, 20);
     padding: 1em;
+
+
+    .navBar{
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 37px;
+        padding-top: 2em;
+    }
+
+
+    /* FONT AWESOME */
+    .fa-twitter,.fa-discord,.fa-envelope{
+        padding-left: 0.5em;
+
+    }
+    .fa-twitter:hover {
+        color: #1DA1F2 !important;
+    }
+    .fa-discord:hover {
+        color: #7289da !important;
+    }
+    .fa-envelope:hover {
+        color: #d87072 !important;
+    }
+    
     
     
 
@@ -35,7 +60,7 @@ img{
     .intro{
         
         display: flex;
-        padding-top: 5em;
+        padding-top: 0em;
         align-items: center;
         padding-left: 1em;
         padding-right: 1em;
@@ -158,6 +183,16 @@ img{
         color: rgb(145, 145, 145);
         margin-bottom: 0.4em;
     }
+    .child_thumbnails{
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        justify-content: center;
+        img{
+            padding: 0.2em;
+        }
+    }
 }
 
 
@@ -218,3 +253,44 @@ img{
         color: #277DA1;
       }   
 }
+
+
+
+/* BACK TO TOP */
+.back-to-top {
+    background-color: transparent;
+    color: #FFFFFF;
+    opacity: 0;
+    transition: opacity .6s ease-in-out;
+    z-index: 999;
+    position: fixed;
+    left: 26%;
+    bottom: 7%;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    
+  }
+
+  a.back-to-top {
+    font-weight: 1000;
+    letter-spacing: 2px;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.6;
+    padding-left: 2px;
+    padding-top: 14px;
+    
+  }
+
+  .back-to-top:hover, .back-to-top:focus, .back-to-top:visited {
+    color: #FFFFFF;
+  }
+
+  .back-to-top.show {
+    opacity: 1;
+  }
+
+  

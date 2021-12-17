@@ -11,8 +11,18 @@
 
 </head>
 <body class="index_body">
-
     <div class="container">
+
+        <section class="navBar">
+
+            <a href="https://twitter.com/porkenvolf" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter" style="font-size:30px;color:#ebebeb"></i></a>
+            <a href="https://discordapp.com/channels/@me/Porkenvölf#8399/" target="_blank" rel="noopener noreferrer"><i class="fab fa-discord" style="font-size:30px;color:#ebebeb"></i></a>
+            <a href="mailto:porkenvolf@gmail.com" target="_blank" rel="noopener noreferrer"><i class="far fa-envelope" style="font-size:30px;color:#ebebeb"></i></a>
+
+        </section>
+
+
+
         <!-- INTRODUCTION -->
         <section class="intro">
             <div class="logo">     
@@ -48,8 +58,39 @@
                     <ul class="main_left_menu">
                         <li><a class="c1" href="bolorto.html" target="main_frame">Captain Bolorto</a></li>
                         <li><a class="c2" href="burgers.html" target="main_frame">Banger Burgers</a></a></li>
-                        <li><a class="c3" href="">Ojoloco</a></a></li>
+                        <li><a class="c3" href="ojoloco.html" target="main_frame">Ojoloco</a></a></li>
                     </ul>
+
+                    <!-- Adds the back to top link to your website -->
+                    <a href="#" id="back-to-top" class="back-to-top" style="display: inline;"><i class="fas fa-arrow-circle-up" style="font-size:50px;color:#5f5f5f"></i></i></a>
+                    <!-- Fades in the button when you scroll down -->
+                    <script>
+                        var link = document.getElementById("back-to-top");
+                        var amountScrolled = 250;
+                    
+                        window.addEventListener('scroll', function(e) {
+                            if ( window.pageYOffset > amountScrolled ) {
+                                link.classList.add('show');
+                            } else {
+                                link.className = 'back-to-top';
+                            }
+                        });  
+                    /* <!-- Scrolls to Top --> */
+                        link.addEventListener('click', function(e) {
+                            e.preventDefault();
+                    
+                            var distance = 0 - window.pageYOffset;
+                            var increments = distance/(500/16);
+                            function animateScroll() {
+                                window.scrollBy(0, increments);
+                                if (window.pageYOffset <= document.body.offsetTop) {
+                                    clearInterval(runAnimation);
+                                }
+                            };
+                            // Loop the animation function
+                            var runAnimation = setInterval(animateScroll, 16);
+                        });
+                    </script>
 
                 </div>
                 

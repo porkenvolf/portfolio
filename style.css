@@ -30,13 +30,41 @@ img {
           justify-content: center;
   background: #141414;
   padding: 1em;
+  /* FONT AWESOME */
+}
+
+.container .navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 37px;
+  padding-top: 2em;
+}
+
+.container .fa-twitter, .container .fa-discord, .container .fa-envelope {
+  padding-left: 0.5em;
+}
+
+.container .fa-twitter:hover {
+  color: #1DA1F2 !important;
+}
+
+.container .fa-discord:hover {
+  color: #7289da !important;
+}
+
+.container .fa-envelope:hover {
+  color: #d87072 !important;
 }
 
 .container .intro {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 5em;
+  padding-top: 0em;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -164,6 +192,23 @@ img {
   margin-bottom: 0.4em;
 }
 
+.child .child_thumbnails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.child .child_thumbnails img {
+  padding: 0.2em;
+}
+
 .c1:hover, .c2:hover, .c3:hover, .c4:hover, .c5:hover, .c6:hover, .c7:hover, .c8:hover, .c9:hover, .c10:hover {
   cursor: default;
 }
@@ -206,5 +251,42 @@ img {
 
 .c10:hover {
   color: #277DA1;
+}
+
+/* BACK TO TOP */
+.back-to-top {
+  background-color: transparent;
+  color: #FFFFFF;
+  opacity: 0;
+  -webkit-transition: opacity .6s ease-in-out;
+  transition: opacity .6s ease-in-out;
+  z-index: 999;
+  position: fixed;
+  left: 26%;
+  bottom: 7%;
+  width: 50px;
+  height: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50%;
+}
+
+a.back-to-top {
+  font-weight: 1000;
+  letter-spacing: 2px;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.6;
+  padding-left: 2px;
+  padding-top: 14px;
+}
+
+.back-to-top:hover, .back-to-top:focus, .back-to-top:visited {
+  color: #FFFFFF;
+}
+
+.back-to-top.show {
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */

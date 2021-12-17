@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.css">
     <link rel="stylesheet" href="style.css">
+    <base target="_blank">
     
 
 </head>
@@ -24,19 +25,41 @@
         Banger Burgers was my first attempt at a procedurally generated NFT collection, having seen first hand the absolute speculative mania of NFTs in mid 2021
         , and wanting to take part. <br>
         It was quite the unusual project for me, and I didn't really know how to tackle it. And since I wanted to do something a little different I thought about making something animated. <br><br>
-        First, I drew a buncha hamburger ingredients: bread, mayo, ketchup, meat, eggs, pickles, cheese, bacon, even pineapple! <br><br>
+        First, I drew a buncha hamburger ingredients: bread, mayo, ketchup, meat, eggs, pickles, cheese, bacon, even pineapple!
+
+        <div class="child_thumbnails"><a href="burgers/aseprite.png"><img src="burgers/aseprite.png" alt="" rel="noopener noreferrer"></a></div>
+
         Then I generated around 10k possible combinations using those ingredients in Excel using a VBA macro, and made it spew a HUGE txt file with all those hamburgers,
-        each one being a string of ingredientes separated by "-" <br><br>
+        each one being a string of ingredientes separated by "-"
+
+        <div class="child_thumbnails"><a href="burgers/excel.png"><img src="burgers/excel.png" alt="" rel="noopener noreferrer"></a></div>
+
         After that I proceeded with the animation. <br>
         To this end I used the Godot game engine. It parsed the HUGE text file into an array of individual burgers, and one by one it rendered the previously designed animation. <br>
-        Every frame of the viewport was saved as png in the background. <br><br>
+        Every frame of the viewport was saved as png in the background.
+
+        <div class="child_thumbnails"><a href="burgers/godot.png"><img src="burgers/godot.png" alt="" rel="noopener noreferrer"></a></div>
+
         Finally, using ImageMagick in a .bat script I created the 10k animated burgers as gifs using the previously generated frames. <br>
-        10k animated burgers were assambled over three days of non-stop rendering. <br><br>
+        10k animated burgers were assambled over three days of non-stop rendering.
+        <div class="child_thumbnails"><a href="burgers/imageMagick.png"><img src="burgers/imageMagick.png" alt="" rel="noopener noreferrer"></a></div>
 
         This is where the fun part ends. After the creative part I failed at the point of minting the collection and also with the marketing. <br>
         I managed to mint 100 Banger Burgers NFT manually using Holaplex, of which I sold exactly ONE! (If you're reading this, thanks, you rock!).
     </div>
-    <div class="child_thumbnails"></div>
+    <div class="child_thumbnails">
+        <img src="burgers/1.gif" alt="">
+        <img src="burgers/2.gif" alt="">
+        <img src="burgers/3.gif" alt="">
+        <img src="burgers/4.gif" alt="">
+        <img src="burgers/5.gif" alt="">
+        <img src="burgers/6.gif" alt="">
+        <img src="burgers/7.gif" alt="">
+        <img src="burgers/8.gif" alt="">
+        <img src="burgers/9.gif" alt="">
+
+
+    </div>
     
 </body>
 

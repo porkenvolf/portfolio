@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porkenvölf</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <base target="_blank">
+    
+
+</head>
+<body class="child" id="childSize">
+
+    <div class="section_name">
+        Ojoloco
+    </div>
+    
+
+    
+    <div class="child_text">
+
+        Ojoloco was an experimental project in which I tried to explore generative art in a way that involved more randomness than my previous project, Banger Burgers. <br>
+        I wanted something "abstract", and something pretty to look at. <br>
+
+        <div class="child_thumbnails"><a href="ojoloco/1.png"><img src="ojoloco/1.png" alt="" rel="noopener noreferrer"></a></div>
+
+        Again, I used the Godot game engine, and what had worked great for Banger Burgers, ended up not being the best tool for Ojoloco. <br>
+        The base of the generative algorithm was an invisible grid in a canvas, where one point in the grid would be randomly selected as the starting point. <br>
+
+        <div class="child_thumbnails"><a href="ojoloco/godot.png"><img src="ojoloco/godot.png" alt="" rel="noopener noreferrer"></a></div>
+
+        Then a second point of the grid would be selected, and the two points would be connected by either a circle, a half-circle or a straight line. <br>
+        The color of the connector would be also determined rolling a random number that would be defined as the hue of the color, having previoulsy fixed saturation and brightness. <br>
+        
+        <div class="child_thumbnails"><a href="ojoloco/3.png"><img src="ojoloco/3.png" alt="" rel="noopener noreferrer"></a></div>
+        
+        After that, the loop would start again with the previously second node defined as the first node of the new loop. <br>
+        When the generative part ended there was an algorithm that measeured the whole thing and generated it AGAIN, this time centered and scaled to fit the canvas. <br>
+
+        <div class="child_thumbnails"><a href="ojoloco/4.png"><img src="ojoloco/4.png" alt="" rel="noopener noreferrer"></a></div>
+
+        This was a very fun project, and I'm very pleased with the result. <br>
+        For my next gen art project I will explore other software options, like Processing, since Godot is very bad for drawing. <br><br>
+
+        Here are some more pieces for you to look at:
+
+
+    </div>
+    
+    
+    <div class="child_thumbnails"><a href="ojoloco/6.png"><img src="ojoloco/6.png" alt="" rel="noopener noreferrer"></a></div>
+    <div class="child_thumbnails"><a href="ojoloco/7.png"><img src="ojoloco/7.png" alt="" rel="noopener noreferrer"></a></div>
+    <div class="child_thumbnails"><a href="ojoloco/8.png"><img src="ojoloco/8.png" alt="" rel="noopener noreferrer"></a></div>
+    <div class="child_thumbnails"><a href="ojoloco/9.png"><img src="ojoloco/9.png" alt="" rel="noopener noreferrer"></a></div>
+    
+    
+</body>
+
+
+
+
+
+
+
+</html>
+
+<script>
+    let height;
+    const sendPostMessage = () => {
+        if (height !== document.getElementById('childSize').offsetHeight) {
+            height = document.getElementById('childSize').offsetHeight;
+            window.parent.postMessage({
+            frameHeight: height
+            }, '*');
+            console.log(height) // check the message is being sent correctly
+        }
+    }
+
+
+
+    window.onload = () => sendPostMessage();
+    window.onresize = () => sendPostMessage();
+    document.getElementById('add-para').onclick = () => sendPostMessage();
+    document.getElementById('remove-para').onclick = () => sendPostMessage();
+</script>
