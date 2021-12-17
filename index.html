@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porkenvölf</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body>
+
+    <div class="container">
+        <!-- INTRODUCTION -->
+        <section class="intro">
+            <div class="logo">     
+                <img src="img/logo.svg" alt="">
+            </div>
+            <div class="intro_content">
+                <div class="line1">Hi! I am </div>
+                <div class="line2">
+                    <span class="c1">P</span><span class="c2">o</span><span class="c3">r</span><span class="c4">k</span><span class="c5">e</span><span class="c6">n</span><span class="c7">v</span><span class="c8">ö</span><span class="c9">l</span><span class="c10">f</span>
+                </div>
+                <div class="line3">Certified Internet Moron.</div>
+            </div>
+                
+                
+            
+            <!-- <nav class="nav">
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="#">Work</a></li>
+                    <li class="nav_item"><a href="#">Contact</a></li>
+
+                </ul>
+            </nav> -->
+
+        </section>
+
+        <section class="main">
+            
+            <div class="main_content">
+                <div class="main_left">
+                    <div class="section_name">
+                        Projects
+                    </div>
+                    <ul class="main_left_menu">
+                        <li><a class="c1" href="">Captain Bolorto</a></li>
+                        <li><a class="c2" href="">Banger Burgers</a></a></li>
+                        <li><a class="c3" href="">Ojoloco</a></a></li>
+                    </ul>
+
+                </div>
+                
+                <div class="main_right">
+                    <iframe id="iframe" src="child.html" style="width:100%;border:none;"></iframe>
+                    <script>
+                        window.onmessage = (e) => {
+                          if (e.data.hasOwnProperty("frameHeight")) {
+                            document.getElementById("iframe").style.height = `${e.data.frameHeight + 30}px`;
+                          }
+                        };
+                    </script>
+                </div>
+            </div>
+            
+        </section>
+        <!-- HERO -->
+
+
+
+        <!-- <i class="fab fa-twitter" style="font-size:30px;color:#1DA1F2"></i>
+    -->
+
+    </div>
+</body>
+
+
+
+
+
+
+
+</html>

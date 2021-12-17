@@ -1,0 +1,613 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+a{
+  color: #cfcfcf;;
+  text-decoration: none;
+  &:visited{
+    color: white;
+  }
+  &:hover{
+    color: #ff0973;
+  }
+  
+}
+
+main {
+  font-family: 'Poppins';
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgb(20, 20, 20);
+  
+  color: rgb(207, 207, 207);
+}
+
+.principal{
+  display: block;
+  width: 52%;
+  min-width: 1000px;
+  margin: auto;
+  background: rgb(27, 27, 27);
+  hr{
+    display: none;
+    border: 0;
+      height: 2px;
+      background-image: linear-gradient(to right, transparent, transparent, #CCC, transparent, transparent);
+  }
+  header{
+    position: relative;
+    z-index: 1;
+    padding-left: 1em;
+    padding-right: 1em;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-image: linear-gradient(rgb(20, 20, 20), transparent);
+    
+   
+    .logo-container{
+      margin-right: 1em;
+      align-items: center;
+      text-align: left;
+      
+      img{
+        max-width: 50px;
+        min-width: 50px;
+        height: auto;
+        padding-top: 0.4em;
+        
+      }
+      
+    
+      
+    }
+    .left{
+      flex: 4;
+       
+      align-items: center;
+      .left-nav{
+        display: flex;
+        list-style-type: none;
+        .nav-link{
+          padding-right: 1em;
+        }
+      }
+      
+    }
+    
+    .right{
+      flex: 4;
+      
+      .right-nav{
+        display: flex;
+        list-style-type: none; 
+        justify-content: end;
+        align-items: center;
+        .nav-link{
+          padding-right: 0.5em;
+          padding-left: 0;/* 
+          padding-top: 1em; */
+        }
+        .connect{/* 
+          padding-top: 1em; */
+        }
+        img{
+          padding-top: 0.5em;
+          max-width: 50px;
+          min-width: 25px;
+        }
+      }
+      
+    
+    }
+    
+  }
+
+  .heroSplash{
+    position: relative;
+    margin-top: -5em;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    .logoDesktop{
+      width: 100%;   
+    }
+  }
+
+
+  /* GLOBAL SETTINGS OF ALL SECTIONS */
+  
+  .mint,.roadmap,.team,.faq{
+    width: 100%;
+    padding: 1em;
+    margin-top: 2em;
+    .sectionName{
+      font-size: 3em;
+      margin-bottom: 0em;
+      text-align: center;
+      img{
+        width: 30%;
+        padding: 0;
+        margin: 0;
+      }
+    }
+    
+
+  }
+
+
+  /* PARTICULAR SETTINGS OF EACH SECTION */
+  .mint{
+    display: block;
+    
+    
+    .sectionContent{
+      display: flex;
+    }
+
+       
+    
+    .left-col{
+      flex: 1;
+      padding-left: 10%;
+      
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+      }
+    }
+    .right-col{
+      flex: 1;
+      padding-right: 10%;
+      
+      text-align: left;
+      
+      padding-left: 3em;
+      img{
+        width: 100%;
+      }
+      .mintButton{
+        margin: 1em;
+        text-align: center;
+
+      }
+
+    }
+  }
+  .roadmap{
+    width: 100%;
+    display: block;
+    text-align: left;
+
+    
+     
+    .roadItem{
+      display: flex;
+      padding-top: 2em;
+      padding-bottom: 3em;
+      padding-right: 1em;
+      margin-bottom: 1em;
+      background: rgb(20, 20, 20);
+      border-radius: 0%;
+
+      .roadLeftCol{
+        text-align: right;
+        .roadDate{
+          font-size: 1em;
+        }
+        .roadDesc{
+          font-size: 1.3em;
+        }
+
+      }
+      .roadRightCol{
+        width: 100%;
+        padding-left: 4em;
+        text-align: left;
+
+      }
+
+    }
+     
+  }
+  .team{
+    padding: 0.5em;
+    .sectionContent{
+      margin-top: 3em;
+      display: flex;
+      .teamMember{
+        background: rgb(20, 20, 20);
+        border-radius: 0%;
+        padding:1em;
+        margin:0.5em;
+        
+        .memberPic{
+          img{
+            width: 50%;
+            height: auto;
+            border: 5px solid rgb(20, 20, 20);
+            border-radius: 50%;
+            margin-top: -60%;
+          }
+          
+        }
+        .memberName{
+          align-items: center;
+          display: block;
+          
+        font-weight: bold;
+          img{
+            
+            width: 2em;
+            height: auto;
+          }
+        }
+        .memberTW{
+          text-align: right;
+          img{
+            max-width: 50px;
+            height: auto;
+
+          }
+          
+        }
+        .memberDesc{
+          font-style: italic;
+          padding-top: 2em;
+
+        }
+  
+      }
+      
+    }
+
+    }
+    .faq{
+      .acc{
+        background: rgb(20, 20, 20);
+        padding-top: 1em;
+        padding-bottom: 1em;
+      }
+    }
+    .footer{
+      padding: 2em;
+      background: rgb(20, 20, 20);
+    }
+    
+    
+
+
+
+}
+
+
+
+
+
+
+                                                                    
+                                                                    
+/* 
+77777777777777777777             66666666             888888888     
+7::::::::::::::::::7            6::::::6            88:::::::::88   
+7::::::::::::::::::7           6::::::6           88:::::::::::::88 
+777777777777:::::::7          6::::::6           8::::::88888::::::8
+           7::::::7          6::::::6            8:::::8     8:::::8
+          7::::::7          6::::::6             8:::::8     8:::::8
+         7::::::7          6::::::6               8:::::88888:::::8 
+        7::::::7          6::::::::66666           8:::::::::::::8  
+       7::::::7          6::::::::::::::66        8:::::88888:::::8 
+      7::::::7           6::::::66666:::::6      8:::::8     8:::::8
+     7::::::7            6:::::6     6:::::6     8:::::8     8:::::8
+    7::::::7             6:::::6     6:::::6     8:::::8     8:::::8
+   7::::::7              6::::::66666::::::6     8::::::88888::::::8
+  7::::::7                66:::::::::::::66       88:::::::::::::88 
+ 7::::::7                   66:::::::::66           88:::::::::88   
+77777777                      666666666               888888888     
+                                                                     */
+                                                                    
+                                                                    
+                                                 
+
+
+
+
+
+
+@media screen and (max-width:768px){
+  .principal{
+    width: 100%;
+    min-width: 0px;
+    hr{
+      display: flex;
+      
+    }
+
+    header{
+      padding-left: 1em;
+      padding-right: 1em;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      
+     
+      .logo-container{
+        margin-right: 1em;
+        align-items: center;
+        text-align: left;
+        
+        img{
+          max-width: 50px;
+          min-width: 50px;
+          height: auto;
+          padding-top: 0.4em;
+          
+        }
+        
+      
+        
+      }
+      .left{
+        flex: 0;
+         
+        align-items: center;
+        .left-nav{
+          display: none;
+          list-style-type: none;
+          .nav-link{
+            padding-right: 1em;
+          }
+        }
+        
+      }
+      
+      .right{
+        flex: 1;
+        
+        .right-nav{
+          display: flex;
+          list-style-type: none; 
+          justify-content: end;
+          align-items: center;
+          .nav-link{
+            padding-right: 0em;
+            padding-left: 0;/* 
+            padding-top: 1em; */
+          }
+          .connect{
+            display: none;
+          }
+          img{
+            padding-top: 0.5em;
+            width: 100%;
+            min-width: 25px;
+          }
+        }
+        
+      
+      }
+    }
+      
+
+
+    
+
+
+
+
+    
+
+
+    .mint,.roadmap,.team,.faq{
+      .sectionName{
+        font-size: 2.5em;
+        margin-bottom: 0.5em;
+        text-align: left;
+        img{
+          width: 100%;
+          padding: 0;
+          margin: 0;
+        }
+      }
+      
+
+    }
+
+    .heroSplash{
+      margin-top: 0;
+    }
+
+    .mint{
+      width: 100%;
+      align-items: center;
+      padding: 0;
+      margin-top: 2em;
+      margin-bottom: 3em;
+
+      .sectionContent{
+        display: block;
+        text-align: center;
+        
+      }
+
+      .logoMobile{
+        display: unset;
+      }
+      
+      .left-col{
+        
+        padding: 0;
+        img {
+          width: 90%;
+          height: auto;
+          padding: 0em;
+          
+          margin: 0;
+        }
+  
+      }
+      .right-col{
+
+        padding-left: 0em;
+        padding: 1em;
+        text-align: center;
+        img{
+          width: 100%;
+          padding-bottom: 1em;
+        }
+  
+      }
+    }
+    .roadmap{
+      margin-bottom: 3em;
+      margin-top: 3em;
+          
+      .roadItem{
+        padding-left: 1em;
+        display: block;
+  
+        .roadLeftCol{
+          text-align: left;
+          .roadDate{
+            font-size: 1em;
+          }
+          .roadDesc{
+            font-size: 1.3em;
+            margin-bottom: 1em;
+          }
+  
+        }
+        .roadRightCol{
+          width: 100%;
+          padding-left: 0;
+          text-align: left;
+  
+        }
+  
+      }
+       
+    }
+    .team{
+      margin-top: 4em;
+      .sectionContent{
+        margin-top: 4em;
+        display: block;
+
+        .teamMember{
+          margin-bottom: 6em;
+          margin-top: 0em;
+          .memberPic{
+            img{
+              width: 150px;
+              height: auto;
+              border: 5px solid rgb(20, 20, 20);
+              border-radius: 50%;
+              margin-top: -60%;
+            }
+            
+          }
+        }
+      }
+    }
+    
+  }
+  
+  
+  
+}
+
+
+
+  /*                                                                                   
+                                                                                    
+1111111             000000000           222222222222222                444444444  
+1::::::1           00:::::::::00        2:::::::::::::::22             4::::::::4  
+1:::::::1         00:::::::::::::00      2::::::222222:::::2           4:::::::::4  
+111:::::1        0:::::::000:::::::0     2222222     2:::::2          4::::44::::4  
+  1::::1        0::::::0   0::::::0                 2:::::2         4::::4 4::::4  
+  1::::1        0:::::0     0:::::0                 2:::::2        4::::4  4::::4  
+  1::::1        0:::::0     0:::::0              2222::::2        4::::4   4::::4  
+  1::::l        0:::::0 000 0:::::0         22222::::::22        4::::444444::::444
+  1::::l        0:::::0 000 0:::::0       22::::::::222          4::::::::::::::::4
+  1::::l        0:::::0     0:::::0      2:::::22222             4444444444:::::444
+  1::::l        0:::::0     0:::::0     2:::::2                            4::::4  
+  1::::l        0::::::0   0::::::0     2:::::2                            4::::4  
+111::::::111     0:::::::000:::::::0     2:::::2       222222               4::::4  
+1::::::::::1      00:::::::::::::00      2::::::2222222:::::2             44::::::44
+1::::::::::1        00:::::::::00        2::::::::::::::::::2             4::::::::4
+111111111111          000000000          22222222222222222222             4444444444
+                                                                                   
+ */      
+ 
+ @media (min-width:769px) and (max-width:1024px){
+  .principal{
+    width: 100%;
+    min-width: 0;
+
+    header{
+      .left{
+        .left-nav{
+          display: flex;
+        }
+
+      }
+
+    }
+    
+
+    .mint{
+      .sectionContent{
+        
+      display: flex;
+      .left-col{
+        padding-left: 0;
+
+      }
+      .right-col{
+        padding-right: 0;
+        
+      }
+
+      }
+      
+    }
+
+
+    .team{
+      .sectionName{
+      }
+      .sectionContent{
+        display: flex;
+
+        .teamMember{
+
+          .memberPic{
+            img{
+              min-width: 130px;
+              height: auto;
+              border: 5px solid rgb(20, 20, 20);
+              border-radius: 50%;
+              margin-top: -15em;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  
+  
+}
+                                                                                   
+     
+                  

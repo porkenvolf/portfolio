@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: #ebebeb;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #141414;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  display: block;
+  width: 1200px;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 5em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .intro .logo img {
+  width: 15em;
+  height: auto;
+  border-color: black;
+  border-style: solid;
+  border-width: 10px;
+  border-radius: 50%;
+}
+
+.container .intro .intro_content {
+  margin-right: 0;
+  margin-left: 1em;
+  display: block;
+}
+
+.container .intro .intro_content .line1, .container .intro .intro_content .line3 {
+  position: relative;
+  font-size: 3em;
+  color: #919191;
+  z-index: 999;
+}
+
+.container .intro .intro_content .line1 {
+  text-align: left;
+}
+
+.container .intro .intro_content .line2 {
+  font-weight: bold;
+  font-size: 140px;
+  line-height: 1;
+}
+
+.container .intro .intro_content .line2 a {
+  text-decoration: none;
+}
+
+.container .intro .intro_content .line2 a:hover {
+  cursor: none;
+}
+
+.container .intro .intro_content .line3 {
+  text-align: right;
+}
+
+.container .main {
+  display: block;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding-top: 5em;
+}
+
+.container .main .main_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .main .main_content .main_left {
+  width: 20%;
+  font-size: 1em;
+}
+
+.container .main .main_content .main_left .main_left_menu {
+  list-style-type: none;
+}
+
+.container .main .main_content .main_left .main_left_menu li {
+  padding-bottom: 0.5em;
+}
+
+.container .main .main_content .main_right {
+  width: 100%;
+}
+
+/* CHILD */
+.section_name {
+  font-size: 2em;
+  color: #919191;
+  margin-bottom: 1em;
+}
+
+.child {
+  text-align: center;
+}
+
+.child .child_text {
+  padding-left: 2em;
+  text-align: left;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.c1:hover {
+  color: #F94144;
+}
+
+.c2:hover {
+  color: #F3722C;
+}
+
+.c3:hover {
+  color: #F8961E;
+}
+
+.c4:hover {
+  color: #F9844A;
+}
+
+.c5:hover {
+  color: #F9C74F;
+}
+
+.c6:hover {
+  color: #90BE6D;
+}
+
+.c7:hover {
+  color: #43AA8B;
+}
+
+.c8:hover {
+  color: #4D908E;
+}
+
+.c9:hover {
+  color: #577590;
+}
+
+.c10:hover {
+  color: #277DA1;
+}
+/*# sourceMappingURL=style.css.map */
