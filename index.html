@@ -46,15 +46,15 @@
                         Projects
                     </div>
                     <ul class="main_left_menu">
-                        <li><a class="c1" href="">Captain Bolorto</a></li>
-                        <li><a class="c2" href="">Banger Burgers</a></a></li>
+                        <li><a class="c1" href="bolorto.html" target="main_frame">Captain Bolorto</a></li>
+                        <li><a class="c2" href="burgers.html" target="main_frame">Banger Burgers</a></a></li>
                         <li><a class="c3" href="">Ojoloco</a></a></li>
                     </ul>
 
                 </div>
                 
                 <div class="main_right">
-                    <iframe id="iframe" src="child.html" style="width:100%;border:none;"></iframe>
+                    <iframe id="iframe" name="main_frame" style="width:100%;border:none;"></iframe>
                     <script>
                         window.onmessage = (e) => {
                           if (e.data.hasOwnProperty("frameHeight")) {

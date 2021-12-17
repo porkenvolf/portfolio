@@ -26,7 +26,7 @@ img{
     width: 1200px;
     margin: 0 auto;
     justify-content: center;
-    background: rgb(25, 25, 25);
+    background: rgb(20, 20, 20);
     padding: 1em;
     
     
@@ -42,11 +42,16 @@ img{
         margin: 0 auto;
         margin-bottom: 5em;
         justify-content: center;
+        -webkit-user-select: none; /* Safari */        
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE10+/Edge */
+        user-select: none; /* Standard */
         
         .logo{
+            width: 30%;
             
             img{
-                width: 15em;
+                width: 30em;
                 height:auto;
                 border-color: black;
                 border-style: solid;
@@ -56,8 +61,9 @@ img{
     
         }
         .intro_content{
+            width: 100%;
             margin-right: 0;
-            margin-left: 1em;
+            padding-left: 5.5em;
             display: block;
             .line1,.line3{
                 position: relative;
@@ -103,14 +109,23 @@ img{
         .main_content{
             display: flex;
             .main_left{
-                width: 20%;
-                font-size: 1em;
+                width: 30%;
+                font-size: 1.2em;
+                
+                padding-left: 3.5em;
+                
                 .main_left_menu{
                     list-style-type: none;
                     li{
                         padding-bottom: 0.4em;
                     }
 
+                }
+                .section_name{
+                    font-size: 2em;
+                    text-align: left;
+                    color: rgb(145, 145, 145);
+                    margin-bottom: 0.5em;
                 }
 
             }
@@ -127,28 +142,31 @@ img{
 
 /* CHILD */
 
-.section_name{
-    font-size: 3em;
-    text-align: left;
-    color: rgb(145, 145, 145);
-    margin-bottom: 0.5em;
-}
+
 .child{
     background: transparent;
     text-align: center;
+    font-size: 1.2em;
+    padding-left: 4.6em;
     .child_text{
-        padding-left: 2em;
         text-align: left;
-        font-size: 1em;
         line-height: 1.5;
     }
     .section_name{
-        padding-left: 0.6em;
+        font-size: 2em;
+        text-align: left;
+        color: rgb(145, 145, 145);
+        margin-bottom: 0.4em;
     }
 }
 
 
-
+.c1,.c2,.c3,.c4,.c5,.c6,.c7,.c8,.c9,.c10{
+    &:hover{
+        cursor: default;
+        
+    }
+}
 
 .c1{
     &:hover{
