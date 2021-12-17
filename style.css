@@ -292,8 +292,8 @@ img {
     opacity: 1;
   }
   .pico8frame {
-    width: 80vw;
-    height: 100vw;
+    width: 70vw;
+    height: 70vw;
     border: none;
   }
 }
