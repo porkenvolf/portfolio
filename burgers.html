@@ -10,6 +10,26 @@
     <base target="_blank">
     
 
+
+    <script>
+        let height;
+        const sendPostMessage = () => {
+            if (height !== document.getElementById('childSize').offsetHeight) {
+                height = document.getElementById('childSize').offsetHeight;
+                window.parent.postMessage({
+                frameHeight: height
+                }, '*');
+                console.log(height) // check the message is being sent correctly
+            }
+        }
+    
+    
+    
+        window.onload = () => sendPostMessage();
+        window.onresize = () => sendPostMessage();
+        document.getElementById('add-para').onclick = () => sendPostMessage();
+        document.getElementById('remove-para').onclick = () => sendPostMessage();
+    </script>
 </head>
 <body class="child" id="childSize">
 
@@ -22,7 +42,7 @@
     <div class="child_text">
         
 
-        Banger Burgers was my first attempt at a procedurally generated NFT collection, having seen first hand the absolute speculative mania of NFTs in mid 2021
+        Banger Burgers was my first attempt at a procedurally generated NFT collection, having seen first hand the crazy speculative mania of NFTs in mid 2021
         , and wanting to take part. <br>
         It was quite the unusual project for me, and I didn't really know how to tackle it. And since I wanted to do something a little different I thought about making something animated. <br><br>
         First, I drew a buncha hamburger ingredients: bread, mayo, ketchup, meat, eggs, pickles, cheese, bacon, even pineapple!
@@ -71,22 +91,3 @@
 
 </html>
 
-<script>
-    let height;
-    const sendPostMessage = () => {
-        if (height !== document.getElementById('childSize').offsetHeight) {
-            height = document.getElementById('childSize').offsetHeight;
-            window.parent.postMessage({
-            frameHeight: height
-            }, '*');
-            console.log(height) // check the message is being sent correctly
-        }
-    }
-
-
-
-    window.onload = () => sendPostMessage();
-    window.onresize = () => sendPostMessage();
-    document.getElementById('add-para').onclick = () => sendPostMessage();
-    document.getElementById('remove-para').onclick = () => sendPostMessage();
-</script>
